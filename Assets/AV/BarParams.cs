@@ -17,7 +17,9 @@ public class BarParams : MonoBehaviour {
 	void Update () {
         if (useBuffer)
         {
-            transform.localScale = new Vector3(((AudioVis._bandBuffer[band] - 1) * scaleMult) + startScale, ((AudioVis._bandBuffer[band]-1) * scaleMult) + startScale, ((AudioVis._bandBuffer[band] - 1) * scaleMult) + startScale);
+            transform.localScale = new Vector3(this.transform.localScale.x/*((AudioVis._bandBuffer[band] - 1) * scaleMult) + startScale*/,
+                                        ((AudioVis._bandBuffer[band]-1) * scaleMult) + startScale,
+                                        this.transform.localScale.z/*((AudioVis._bandBuffer[band] - 1) * scaleMult) + startScale)*/);
         }
         else
         {
