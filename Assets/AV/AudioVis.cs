@@ -8,9 +8,13 @@ public class AudioVis : MonoBehaviour {
 
     AudioSource audioSource;
     public static float[] samples = new float[512];
-    public static float[] _freqBand = new float[8];
-    public static float[] _bandBuffer = new float[8];
+    float[] _freqBand = new float[8];
+    float[] _bandBuffer = new float[8];
     float[] _bufferDecrease = new float[8];
+
+    float[] _maxBand = new float[8];
+    public static float[] _audioBand = new float[8];
+    public static float[] _audioBandBuffer = new float[8];
     // Use this for initialization
     void Start () {
         audioSource = GetComponent<AudioSource>();
@@ -21,8 +25,22 @@ public class AudioVis : MonoBehaviour {
         GetSpectrumAudioSource();
         MakeFrequencyBand();
         BandBuffer();
-	}
+        CreateAudioBands();
 
+    }
+
+    void CreateAudioBands()
+    {
+        for (int i = 0; i < 8; i++)
+        {
+            if (_freqBand[i]> _maxBand[i])
+            {
+                _maxBand[i] = _freqBand[i];
+            }
+            _audioBand[i] = (_freqBand[i] / _maxBand[i]);
+            _audioBandBuffer[i] = (_bandBuffer[i] / _maxBand[i]);
+        }
+    }
     private void BandBuffer()
     {
         for (int g = 0; g < 8; g++)
