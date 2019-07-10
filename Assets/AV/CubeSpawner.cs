@@ -46,7 +46,7 @@ public class CubeSpawner : MonoBehaviour {
         {
             if (bars !=null)
             {
-                bars[i].transform.localScale = new Vector3(1, (AudioVis.samples[i] * _maxScale)+2, 1);
+                bars[i].transform.localScale = new Vector3(1, (AudioVis.samplesLeft[i] * _maxScale)+2, 1);
             }
         }   
     }
