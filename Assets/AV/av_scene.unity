@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.04610678, g: 0.05827915, b: 0.039814785, a: 1}
+  m_IndirectSpecularColor: {r: 0.0241149, g: 0.019195912, b: 0.023553006, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -213,8 +213,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 2
   startScale: 1
@@ -379,6 +382,26 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 0.3675046
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -461,6 +484,26 @@ Prefab:
     - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
         type: 2}
       propertyPath: doLight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0.39488173
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -572,6 +615,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -618,8 +686,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 6
   startScale: 0
@@ -728,8 +799,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 5
   startScale: 0
@@ -833,8 +907,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 3
   startScale: 0
@@ -976,6 +1053,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0.39488173
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -1022,8 +1124,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 4
   startScale: 1
@@ -1235,7 +1340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &371616450
 Transform:
   m_ObjectHideFlags: 0
@@ -1341,8 +1446,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 0
   startScale: 0
@@ -1504,8 +1612,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 7
   startScale: 0
@@ -1609,8 +1720,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 2
   startScale: 0
@@ -1750,6 +1864,21 @@ Prefab:
     - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
         type: 2}
       propertyPath: doLight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0.972549
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1934,6 +2063,26 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0.42871737
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -2078,8 +2227,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 2
   startScale: 0
@@ -2208,8 +2360,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 5
   startScale: 0
@@ -2399,8 +2554,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 0
   startScale: 1
@@ -2540,6 +2698,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0.6412373
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -2559,7 +2742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &746832546
 Transform:
   m_ObjectHideFlags: 0
@@ -2699,8 +2882,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 6
   startScale: 0
@@ -2842,6 +3028,26 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -2946,8 +3152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 4
   startScale: 0
@@ -3085,6 +3294,21 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -3156,8 +3380,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 1
   startScale: 1
@@ -3232,7 +3459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &978735550
 Transform:
   m_ObjectHideFlags: 0
@@ -3338,8 +3565,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 3
   startScale: 1
@@ -3441,8 +3671,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 1
   startScale: 0
@@ -3546,8 +3779,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 0
   startScale: 0
@@ -3671,8 +3907,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 6
   startScale: 1
@@ -3812,6 +4051,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0.42871737
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -3896,6 +4160,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 0.3675046
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -3942,8 +4231,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 7
   startScale: 0
@@ -4047,8 +4339,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 0
   startScale: 0
@@ -4248,7 +4543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _useMic: 1
-  _clip: {fileID: 8300000, guid: c3d26f36c283e5c4a88a71af5e50260d, type: 3}
+  _clip: {fileID: 8300000, guid: 318716d21d4220f4e8e1e61beab34b96, type: 3}
   selectedMic: 
   _mixerGroupMic: {fileID: 243401371253571096, guid: 524d6026068b5f14a84564b0323ce343,
     type: 2}
@@ -4351,6 +4646,21 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0.50513387
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -4397,8 +4707,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 6
   startScale: 0
@@ -4575,6 +4888,21 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0.6412373
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -4626,8 +4954,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 3
   startScale: 0
@@ -4731,8 +5062,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 3
   startScale: 0
@@ -4821,8 +5155,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1445460282}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
-  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalRotation: {x: -0.0000004109319, y: 0.70710677, z: -0.7071069, w: 0.0000004109317}
+  m_LocalPosition: {x: 2.3200002, y: -2.6799998, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1603413023}
@@ -4835,7 +5169,7 @@ Transform:
   - {fileID: 944074871}
   m_Father: {fileID: 1220364318}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: -0.000015258789}
 --- !u!1 &1533448893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4859,8 +5193,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1533448893}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalRotation: {x: 0.70710295, y: -0, z: -0, w: 0.7071107}
+  m_LocalPosition: {x: 2.3200002, y: -2.6799998, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1362264708}
@@ -4873,7 +5207,7 @@ Transform:
   - {fileID: 1307022118}
   m_Father: {fileID: 1220364318}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
 --- !u!1001 &1547545488
 Prefab:
   m_ObjectHideFlags: 0
@@ -4955,6 +5289,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 0.50513387
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -5001,8 +5360,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 5
   startScale: 1
@@ -5187,8 +5549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 1
   startScale: 0
@@ -5328,8 +5693,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 4
   startScale: 0
@@ -5433,8 +5801,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 2
   startScale: 0
@@ -5597,6 +5968,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -5643,8 +6039,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 7
   startScale: 0
@@ -5720,7 +6119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1747277108
 Transform:
   m_ObjectHideFlags: 0
@@ -5872,6 +6271,31 @@ Prefab:
       propertyPath: doLight
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.g
+      value: 0.972549
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618931504342476, guid: ce291b65c5f52484aa0311ca423c2746,
+        type: 2}
+      propertyPath: doRandomColor
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce291b65c5f52484aa0311ca423c2746, type: 2}
   m_IsPrefabAsset: 0
@@ -5918,8 +6342,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 1
   startScale: 0
@@ -6043,8 +6470,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
   doScale: 0
   doLight: 1
+  doRandomBand: 0
+  doRandomColor: 0
   useBuffer: 1
   band: 7
   startScale: 1
@@ -6166,8 +6596,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 1, g: 1, b: 1, a: 1}
   doScale: 0
   doLight: 1
+  doRandomBand: 1
+  doRandomColor: 1
   useBuffer: 1
   band: 5
   startScale: 0
