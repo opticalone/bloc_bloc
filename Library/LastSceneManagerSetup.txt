@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/FractalNoise/FractalScene.unity
+- path: Assets/AV/av_scene.unity
   isLoaded: 1
   isActive: 1
