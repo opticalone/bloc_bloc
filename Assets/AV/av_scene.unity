@@ -4542,7 +4542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 189e1edf8f924454a9baec9379bfec31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _useMic: 1
+  _useMic: 0
   _clip: {fileID: 8300000, guid: 318716d21d4220f4e8e1e61beab34b96, type: 3}
   selectedMic: 
   _mixerGroupMic: {fileID: 243401371253571096, guid: 524d6026068b5f14a84564b0323ce343,
