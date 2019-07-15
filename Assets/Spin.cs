@@ -20,6 +20,6 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(new Vector3(rotateX, rotateY, rotateZ) * Time.deltaTime);
+        transform.Rotate(new Vector3(rotateX, rotateY, rotateZ) * Time.deltaTime * rotationSpeed);
     }
 }

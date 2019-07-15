@@ -95,7 +95,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c86c8f122fef3a4469ec5b8f65b5b8ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
+  doScale: 0
+  doLight: 0
+  doRandomBand: 0
+  doRandomColor: 0
+  useBuffer: 1
   band: 5
   startScale: 0.1
   scaleMult: 0.01
-  useBuffer: 1
+  scaleAxis: 0

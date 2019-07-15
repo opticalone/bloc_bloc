@@ -50,8 +50,8 @@ public class AvPostProcessAffector : MonoBehaviour
     void Update()
     {
         transform.LookAt(lookPoint);
-        m_Lens.scale.value = (AudioVis._audioBandBuffer[band] + 1)*2;
-        cam.fieldOfView = 35 + (-AudioVis._audioBandBuffer[band] * 15);
+        //m_Lens.scale.value = (AudioVis._audioBandBuffer[band] + 1)*2;
+        cam.fieldOfView = 35 + (-AudioVis._audioBandBuffer[band] * 7);
     }
 
     void OnDestroy()
